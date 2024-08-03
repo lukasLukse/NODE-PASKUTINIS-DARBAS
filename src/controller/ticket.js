@@ -26,10 +26,9 @@ const CREATE_TICKET = async (req, res) => {
 const GET_USER_TICKETS = async (req, res) => {
   try {
     const response = await TicketModel.find({
-      userId: req.params.userId,
+      userId: req.params.id,
     });
 
-    console.log(response);
     return res.status(200).json({ tickets: response });
   } catch (err) {
     console.log(err);
