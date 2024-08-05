@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.post("/signup", SIGNUP);
 router.post("/login", LOGIN);
-router.get("/company/:id", GET_USER_BY_ID);
-router.delete("/company/:id", DELETE_USER_BY_ID);
+router.get("/user/:id", GET_USER_BY_ID);
+router.delete("/user/:id", DELETE_USER_BY_ID);
 
 export default router;
